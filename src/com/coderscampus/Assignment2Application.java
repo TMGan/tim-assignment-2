@@ -18,7 +18,7 @@ public class Assignment2Application {
 			tries--;
 			if (guess < 1 || guess > 100) {
 				System.out.println("Your guess is not between 1 and 100, please try again.");
-				continue;
+				tries++;
 			}
 			else if (guess< theRandomNumber) {
 				System.out.println("Please pick a higher number.");
